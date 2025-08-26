@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SCAR Lab</title>
+  <meta name="description" content="SCAR Lab" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: {
+            brand: {
+              50:'#FFF7F8',100:'#FFD6DB',200:'#FF9AA1',300:'#FF636A',400:'#F23A3F',
+              500:'#DC231E',600:'#990000',700:'#800000',800:'#5A0C0C',900:'#3D0909'
+            },
+            accent: {
+              50:'#FFFCEB',100:'#FFF4C6',200:'#FFE694',300:'#FFD563',400:'#FFC132',
+              500:'#FFAA00',600:'#A36B00',700:'#613D00',800:'#4B2F00',900:'#3A2400'
+            }
+          },
+          boxShadow: { glow: '0 10px 30px rgba(153,0,0,.25)' }
+        }
+      }
+    }
+  </script>
+  <style> html{scroll-behavior:smooth;} </style>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-brand-700 text-white font-bold">ℒ</span>
+        <span class="font-semibold tracking-tight">SCAR Lab</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#pis" class="hover:text-brand-700">PIs</a>
+        <a href="#students" class="hover:text-brand-700">Students</a>
+        <a href="#projects" class="hover:text-brand-700">Projects</a>
+      </nav>
+      <button id="themeToggle" class="ml-4 inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-slate-100 px-3 py-2 text-sm font-semibold text-slate-700 hover:bg-brand-600 hover:text-white hover:border-brand-600">
+        <span>Toggle</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M21.64 13a9 9 0 11-10.63-10.63A7 7 0 1021.64 13z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero (raised, no badge) -->
+  <section class="relative">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="pt-16 md:pt-20 pb-10 flex flex-col items-center text-center">
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+          Security, Conflict, and Rebellion <span class="text-brand-600">Lab</span>
+        </h1>
+        <p class="mt-4 text-slate-600 max-w-2xl">
+          We conduct research that evamines the causes and effects of political violence. Meet our principal investigators, our student team, and explore current projects.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3 justify-center">
+          <a href="#pis" class="rounded-xl border border-slate-300 bg-slate-100 px-5 py-3 text-slate-700 font-semibold hover:bg-brand-600 hover:text-white hover:border-brand-600">Meet the PIs</a>
+          <a href="#projects" class="rounded-xl border border-slate-300 bg-slate-100 px-5 py-3 text-slate-700 font-semibold hover:bg-brand-600 hover:text-white hover:border-brand-600">Explore Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIs -->
+  <section id="pis" class="pt-4 pb-16 md:pt-6 md:pb-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between flex-wrap gap-6">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Principal Investigators</h2>
+      </div>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <!-- PI 1 -->
+        <article class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl transition-shadow">
+          <div class="flex items-center gap-4">
+<img src="https://elbrannon.com/assets/img/profile.jpg"
+     alt="PI 1"
+     class="h-20 w-20 rounded-2xl object-cover object-top ring-1 ring-slate-200" />            <div>
+              <h3 class="text-xl font-semibold">Elizabeth Brannon</h3>
+              <p class="text-sm text-slate-600">Gender and Conflict</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-sm">
+                <a class="inline-flex items-center rounded-lg border border-slate-300 bg-slate-100 px-3 py-1.5 text-slate-700 font-semibold hover:bg-brand-600 hover:text-white hover:border-brand-600" href="#">Website</a>
+                <a class="inline-flex items-center rounded-lg border border-slate-300 bg-slate-100 px-3 py-1.5 text-slate-700 font-semibold hover:bg-brand-600 hover:text-white hover:border-brand-600" href="#">Email</a>
+              </div>
+            </div>
+          </div>
+          <p class="mt-4 text-slate-700">Leads research on how women’s political representation increases after war and its implications for foreign policy.</p>
+        </article>
+        <!-- PI 2 -->
+        <article class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl transition-shadow">
+          <div class="flex items-center gap-4">
+<img src="https://caleblucas.com/img/caleb_lucas_headshot.jpg"
+     alt="PI 2"
+     class="h-20 w-20 rounded-2xl object-cover ring-1 ring-slate-200"
+     style="object-position: 50% 30%;" />            <div>
+              <h3 class="text-xl font-semibold">Caleb Lucas</h3>
+              <p class="text-sm text-slate-600">National Security</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-sm">
+                <a class="inline-flex items-center rounded-lg border border-slate-300 bg-slate-100 px-3 py-1.5 text-slate-700 font-semibold hover:bg-brand-600 hover:text-white hover:border-brand-600" href="#">Website</a>
+                <a class="inline-flex items-center rounded-lg border border-slate-300 bg-slate-100 px-3 py-1.5 text-slate-700 font-semibold hover:bg-brand-600 hover:text-white hover:border-brand-600" href="#">Email</a>
+              </div>
+            </div>
+          </div>
+          <p class="mt-4 text-slate-700">Leads research on how armed actors involved in civil conflicts manage their relationships with non-combatants. </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Students (IU cream background) -->
+  <section id="students" class="py-16 md:py-24 bg-accent-50 border-y border-slate-200/70">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between flex-wrap gap-6">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Students</h2>
+        <div class="flex items-center gap-3">
+          <input id="search" type="search" placeholder="Search students…" class="w-56 rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600" />
+          <select id="roleFilter" class="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600">
+            <option value="">All roles</option>
+            <option>PhD</option>
+            <option>MS</option>
+            <option>Undergrad</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="studentsGrid" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <template id="studentCard">
+        <article class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:shadow-xl transition-shadow">
+          <div class="flex items-center gap-4">
+            <img class="avatar h-16 w-16 rounded-xl object-cover ring-1 ring-slate-200" alt="" />
+            <div>
+              <h3 class="name text-lg font-semibold"></h3>
+              <p class="role text-sm text-slate-600"></p>
+            </div>
+          </div>
+          <p class="bio mt-3 text-sm text-slate-700"></p>
+          <div class="tags mt-3 flex flex-wrap gap-2"></div>
+        </article>
+      </template>
+    </div>
+  </section>
+
+
+<section id="projects" class="py-16 md:py-24">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="lg:col-span-2">
+      <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Research & Projects</h2>
+      <p class="mt-4 text-slate-700">
+        We study political violence. Our current focus areas include:
+        (1) Gender and conflict,
+        (2) Propaganda and information warfare,
+        (3) Terrorism.
+      </p>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="text-xs font-semibold text-brand-700">THRUST 01</div>
+          <h3 class="mt-1 font-semibold">Gender and Conflict</h3>
+          <p class="mt-2 text-sm text-slate-700">
+            More info on Gender and conflict
+          </p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="text-xs font-semibold text-brand-700">THRUST 02</div>
+          <h3 class="mt-1 font-semibold">Propaganda and information warfare</h3>
+          <p class="mt-2 text-sm text-slate-700">
+            More info on Gender and conflict
+          </p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="text-xs font-semibold text-brand-700">THRUST 03</div>
+          <h3 class="mt-1 font-semibold">Terrorism</h3>
+          <p class="mt-2 text-sm text-slate-700">
+            More info on Gender and conflict
+          </p>
+        </article>
+        <article class="rounded-2xl border border-slate-200 p-6 bg-white">
+          <div class="text-xs font-semibold text-brand-700">THRUST 04</div>
+          <h3 class="mt-1 font-semibold">Responsible AI</h3>
+          <p class="mt-2 text-sm text-slate-700">
+            Auditing, transparency, and community standards.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <script>
+    // Dark mode toggle (no persistence for simplicity)
+    const toggle = document.getElementById('themeToggle');
+    toggle?.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      document.body.classList.toggle('bg-slate-900');
+      document.body.classList.toggle('text-slate-100');
+    });
+
+
+    // Students data
+    const students = [
+      { name: 'Anna Mcgrath', role: 'PhD', avatar: 'https://picsum.photos/seed/sam/200/200', bio: 'Economics', tags: ['NatSec', 'Data Science'] },
+      { name: 'George Bender', role: 'MS', avatar: 'https://picsum.photos/seed/sam/200/200', bio: 'Business, political science', tags: ['NatSec', 'Gender'] },
+      { name: 'Katie Elizabeth Ruffner', role: 'PhD', avatar: 'https://picsum.photos/seed/sam/200/200', bio: 'Economics', tags: [' Conflict', 'Gender'] },
+      { name: 'Melisa Mendez', role: 'Undergrad', avatar: 'https://picsum.photos/seed/sam/200/200', bio: 'International studies', tags: ['Propaganda'] },
+      { name: 'Benjamin Charles Blacketer', role: 'MS', avatar: 'https://picsum.photos/seed/sam/200/200', bio: 'Political science', tags: ['Propaganda'] },
+      { name: 'Lindley Scott', role: 'MS', avatar: 'https://picsum.photos/seed/sam/200/200', bio: 'Political science', tags: ['Gender'] },
+      { name: 'Syd Holub', role: 'PhD', avatar: 'https://picsum.photos/seed/sam/200/200', bio: 'Political science', tags: ['Gender', 'Terrorism'] }
+    ];
+
+    const grid = document.getElementById('studentsGrid');
+    const tpl = document.getElementById('studentCard');
+
+    function render(list){
+      grid.innerHTML = '';
+      list.forEach(s => {
+        const node = tpl.content.cloneNode(true);
+        node.querySelector('.avatar').src = s.avatar;
+        node.querySelector('.avatar').alt = s.name;
+        node.querySelector('.name').textContent = s.name;
+        node.querySelector('.role').textContent = s.role;
+        node.querySelector('.bio').textContent = s.bio;
+        const tagWrap = node.querySelector('.tags');
+        (s.tags||[]).forEach(t => {
+          const span = document.createElement('span');
+          span.className = 'inline-flex items-center rounded-lg border border-accent-300/60 bg-accent-50 px-2.5 py-1 text-xs text-accent-800';
+          span.textContent = t;
+          tagWrap.appendChild(span);
+        });
+        grid.appendChild(node);
+      });
+    }
+
+    render(students);
+
+    // search + filter
+    const search = document.getElementById('search');
+    const roleFilter = document.getElementById('roleFilter');
+    function applyFilters(){
+      const q = (search.value || '').toLowerCase();
+      const role = roleFilter.value;
+      render(students.filter(s => {
+        const matchQ = !q || s.name.toLowerCase().includes(q) || s.bio.toLowerCase().includes(q) || (s.tags||[]).join(' ').toLowerCase().includes(q);
+        const matchRole = !role || s.role === role;
+        return matchQ && matchRole;
+      }));
+    }
+    search.addEventListener('input', applyFilters);
+    roleFilter.addEventListener('change', applyFilters);
+
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
